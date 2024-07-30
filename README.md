@@ -89,7 +89,7 @@ function buscarClima(lat, lon, ciudad) {
             console.error('Error:', error);
         });
 }
-buscarClima realiza una solicitud a la API de OpenWeather para obtener los datos del clima de una ubicación específica y  el mapa con los resultados.
+buscarClima realiza una solicitud a la API de OpenWeather para obtener los datos del clima de una ubicación específica y  el mapa con los resultados. se agrega &lang=es al final de la url para que convierta el texto a español como lo sugioere la pagina de weathermaps.
 Resumen
 Este proyecto integra OpenWeather y OpenStreetMap para proporcionar información climática y geográfica de cualquier ciudad ingresada por el usuario.
 Usa una combinación de JavaScript html y css, solicitudes fetch para interactuar con las APIs, y Leaflet para la visualización del mapa.
