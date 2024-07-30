@@ -3,7 +3,7 @@ const mapa = document.getElementById('mapa');
 const elementoMapa = L.map(mapa).setView([4.5709, -74.2973], 8);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(elementoMapa);
 
 const cuerpo = document.getElementById('cuerpo');
@@ -32,7 +32,7 @@ document.getElementById('limpiar').addEventListener('click', function() {
 });
 
 function buscarCoordenadas(ciudad) {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${ciudad}&limit=1&appid=${llaveOpenWeather}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${ciudad}&limit=1&appid=${llaveOpenWeather}`)
         .then(respuesta => respuesta.json())
         .then(data => {
             if (data.length > 0) {
